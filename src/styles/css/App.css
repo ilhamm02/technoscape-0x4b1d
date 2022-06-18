@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.content-login,
+.content-register {
+    margin-top: 150px;
+}
+
+.content-login .input-box .input-group input,
+.content-register input {
+    background-color: #D9D9D9;
+    min-height: 50px;
+    font-size: 12px;
+}
+
+.btn-masuk,
+.btn-google {
+    background-color: #B6EF12;
+}
