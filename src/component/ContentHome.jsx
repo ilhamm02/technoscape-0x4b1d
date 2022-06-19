@@ -64,7 +64,7 @@ class ContentHome extends React.Component {
                 <Nav>
                   <Nav.Link href="#deets">Home</Nav.Link>
                   <Nav.Link href="#deets">Notifikasi</Nav.Link>
-                  <Nav.Link href="#deets">Profile</Nav.Link>
+                  <Nav.Link href="/profile">Profile</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>

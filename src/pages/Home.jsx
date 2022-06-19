@@ -11,10 +11,6 @@ class Home extends React.Component {
     login: false
   }
 
-  componentDidMount() {
-    console.log(this.props.loginStatus)
-  }
-
   render() {
     return (
       <>
