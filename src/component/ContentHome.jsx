@@ -3,6 +3,9 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import { Chart as ChartJS } from "chart.js/auto"
+import { Doughnut } from "react-chartjs-2"
+
 
 import ovologo from "../styles/img/OVO.png";
 import gopaylogo from "../styles/img/GOJEK.png";
@@ -12,8 +15,8 @@ import ovocolor from "../styles/img/OVO-COLOUR.png";
 
 class ContentHome extends React.Component {
   state = {
-    loginStatus: false,
-    position: "position-1",
+    loginStatus: true,
+    position: "finish",
     telepon: "",
     gopay: "",
     ovo: "",
@@ -73,8 +76,38 @@ class ContentHome extends React.Component {
           {this.state.loginStatus ? (
             <div className="container mt-4 mb-4 pt-4 home-section pb-4">
               <div className="row">
-                <div className="col-12 col-md-7 mx-2 left-home mb-4">
-                  <p>kiri</p>
+                <div className="col-12 col-md-7 mx-4 left-home mb-4">
+                  <Doughnut className="mx-2"
+                   data={{
+                    labels: ['Pendapatan', 'Pengeluaran'],
+                    datasets: [{
+                        label: `Biaya pendapatan dan pengeluaran`,
+                        type: "doughnut",
+                        data: [425.000, 495.000],
+                        barThickness: 50,   
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                        ],
+                        borderWidth: 1,
+                        hoverBorderWidth: 2,
+                    },
+                ]
+                }}
+                height = {10}
+					options={{
+						maintainAspectRatio: false,
+						scales: {
+							y: {
+								beginAtZero: false
+							}
+						}
+					}} 
+                  />
                 </div>
                 <div className="col-12 col-md-4 right-home mb-4">
                   <div className="content-right-home">
@@ -91,7 +124,7 @@ class ContentHome extends React.Component {
                               <p className="pt-2">08982442470</p>
                               <span className="pt-2">Saldo Kamu</span>
                               <p>
-                                <b>RP. 750.000</b>
+                                <b>RP. 312.700</b>
                               </p>
                             </div>
                             <div>
@@ -108,7 +141,7 @@ class ContentHome extends React.Component {
                               <p className="pt-2">08982442470</p>
                               <span className="pt-2">Saldo Kamu</span>
                               <p>
-                                <b>RP. 750.000</b>
+                                <b>RP. 280.300</b>
                               </p>
                             </div>
                             <div>
@@ -135,11 +168,11 @@ class ContentHome extends React.Component {
                             </div>
                             <div className="col-4">
                               <span className="text-success col-12">
-                                + RP. 200.000
+                                + RP. 182.000
                               </span>
                               <br />
                               <span className="text-danger col-12">
-                                - RP. 100.000
+                                - RP. 70.300
                               </span>
                             </div>
                           </div>
@@ -161,11 +194,11 @@ class ContentHome extends React.Component {
                             </div>
                             <div className="col-4">
                               <span className="text-success col-12">
-                                + RP. 200.000
+                                + RP. 290.420
                               </span>
                               <br />
                               <span className="text-danger col-12">
-                                - RP. 100.000
+                                - RP. 20.900
                               </span>
                             </div>
                           </div>
@@ -258,9 +291,9 @@ class ContentHome extends React.Component {
                               <div className="col-9 row mx-1">
                                 <div className="col-12">
                                   <b className="col-12">
-                                    Pembayaran - Token Listrik
+                                    Pembayaran - Pulsa Elektronik
                                   </b>
-                                  <p className="text-muted">5 days ago</p>
+                                  <p className="text-muted">8 days ago</p>
                                 </div>
                               </div>
                             </div>
@@ -284,8 +317,8 @@ class ContentHome extends React.Component {
                               </div>
                               <div className="col-9 row mx-1">
                                 <div className="col-12">
-                                  <b className="col-12">Pembayaran - PAM AIR</b>
-                                  <p className="text-muted">5 days ago</p>
+                                  <b className="col-12">Pembayaran - Transfer</b>
+                                  <p className="text-muted">7 days ago</p>
                                 </div>
                               </div>
                             </div>

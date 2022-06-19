@@ -6,8 +6,7 @@ import {getLogin} from "../redux/actions/getData"
 class ContentLogin extends React.Component {
 
   fetchLogin = (tab) => {
-    this.props.getLogin(tab)
-    console.log(this.props.loginStatus)
+    window.location.href = "/"
   }
 
   render() {
@@ -32,7 +31,7 @@ class ContentLogin extends React.Component {
             <span>Password</span>
             <div className="input-group mb-3 mb-4 mt-1">
               <input
-                type="text"
+                type="password"
                 className="form-control"
                 placeholder="Ketikan kata sandi anda"
               />

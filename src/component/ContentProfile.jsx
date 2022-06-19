@@ -48,7 +48,7 @@ class ContentProfile extends React.Component {
               </div>
               <div className="col-12 col-md-8 right">
                 <h4>
-                  <b>Albertus Fernando</b>
+                  <b>Udin Sanidin</b>
                   <hr className="text-success" />
                 </h4>
                 <div className="margin-top mt-4">
@@ -66,7 +66,7 @@ class ContentProfile extends React.Component {
                       <br />
                     </div>
                     <div className="col-7 col-md-8 mx-2">
-                      <b>Albertusreno@kristiardy</b>
+                      <b>udinsanidin12@gmail.com</b>
                       <br />
                       <b>083474928492</b>
                       <br />
