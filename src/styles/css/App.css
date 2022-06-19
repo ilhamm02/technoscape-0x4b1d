@@ -93,6 +93,14 @@ body {
     font-size: 12px;
 }
 
+.profile-section img {
+    width: 100%;
+}
+
+.profile-section .left img {
+    margin-top: -70%;
+    width: 100%;
+}
 
 @media screen and (max-width: 500px) {
     body {
@@ -103,5 +111,6 @@ body {
         font-weight: 1000;
         font-size: 40px;
     }
+
 
 }

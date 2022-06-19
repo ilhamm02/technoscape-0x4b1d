@@ -62,7 +62,7 @@ class ContentHome extends React.Component {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto"></Nav>
                 <Nav>
-                  <Nav.Link href="#deets">Home</Nav.Link>
+                  <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="#deets">Notifikasi</Nav.Link>
                   <Nav.Link href="/profile">Profile</Nav.Link>
                 </Nav>
