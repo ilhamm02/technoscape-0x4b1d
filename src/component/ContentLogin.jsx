@@ -4,7 +4,7 @@ class ContentLogin extends React.Component {
   render() {
     return (
       <>
-        <div className="container-fluid content-login col-11 col-md-4">
+        <div className="container-fluid content-login col-11 col-md-4 mb-4 pb-4">
           <div className="text-center">
             <h3>
               <b>Masuk</b>
