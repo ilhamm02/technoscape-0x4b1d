@@ -1,6 +1,15 @@
 import React from "react";
 
+import { connect } from "react-redux";
+import {getLogin} from "../redux/actions/getData"
+
 class ContentLogin extends React.Component {
+
+  fetchLogin = (tab) => {
+    this.props.getLogin(tab)
+    console.log(this.props.loginStatus)
+  }
+
   render() {
     return (
       <>
@@ -42,7 +51,7 @@ class ContentLogin extends React.Component {
               </div>
             </div>
           </div>
-          <button className="btn col-12 mb-4 btn-masuk mt-4">
+          <button className="btn col-12 mb-4 btn-masuk mt-4" onClick={() => this.fetchLogin(true)}>
             <h4 className="pt-3">
               <b>Masuk</b>
             </h4>
@@ -65,4 +74,14 @@ class ContentLogin extends React.Component {
   }
 }
 
-export default ContentLogin;
+const mapStateToProps = (state) => {
+  return {
+    loginStatus: state.user.loginStatus
+  }
+}
+
+const mapDispatchToProps = {
+  getLogin,
+}
+
+export default connect (mapStateToProps, mapDispatchToProps)(ContentLogin);

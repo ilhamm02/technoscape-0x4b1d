@@ -10,7 +10,7 @@ class WelcomeHome extends React.Component {
           <div className="row container content-welcome">
             <div className="col-12 col-md-6 left mb-4">
               <div className="mx-4 content-left">
-                <div className="col-11 pb-4">
+                <div className="col-11 col-md pb-4">
                   <h3 className="text-white">
                     <b>
                       Kelola <span className="green"> Keuangan </span>

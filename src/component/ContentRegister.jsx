@@ -177,6 +177,7 @@ class ContentRegister extends React.Component {
             <div className="text-center alert alert-success" role="alert">
               Pendaftaran berhasil
             </div>
+           <a href="/login" className="text-center text-dark"><p>Login?</p></a>
           </>
         ) : null}
       </div>
